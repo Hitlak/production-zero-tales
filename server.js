@@ -26,10 +26,7 @@ app.use(morgan('dev')); // send api request breif detail in terminal
 
 //routes
 app.use('/api/v1/auth', require('./routes/userRoute'));
-app.use('/api/v1/post', require('./routes/postRoute'));
-app.use('/api/v1/tag', require('./routes/tagRoute'));
 app.use('/api/v1/hindiStory', require('./routes/hindiStoryRoute'));
-app.use('/api/v1/about', require('./routes/aboutRoute'));
 app.use('/api/v1/englishStory', require('./routes/englishStoryRoute'));
 //home
 app.get('/', (req, res) => {
